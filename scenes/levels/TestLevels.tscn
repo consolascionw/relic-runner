@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyanwfdvk5krd"]
+
+[ext_resource type="PackedScene" uid="uid://cepamj0t3y3no" path="res://scenes/player/Player.tscn" id="1_dxgbs"]
+[ext_resource type="PackedScene" uid="uid://dab8420087hqo" path="res://scenes/items/Relic.tscn" id="2_0f28g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_dxgbs")]
+position = Vector2(640, 360)
+
+[node name="Relic" parent="." instance=ExtResource("2_0f28g")]
+position = Vector2(114, 663)
+
+[node name="Relic2" parent="." instance=ExtResource("2_0f28g")]
+position = Vector2(92, 65)
+
+[node name="Relic3" parent="." instance=ExtResource("2_0f28g")]
+position = Vector2(1179, 77)
+
+[node name="Relic4" parent="." instance=ExtResource("2_0f28g")]
+position = Vector2(1196, 656)
+
+[node name="Relic5" parent="." instance=ExtResource("2_0f28g")]
+position = Vector2(641, 461)
