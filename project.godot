@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="RelicRunner"
-run/main_scene="uid://dyanwfdvk5krd"
+run/main_scene="uid://c4gouh2wyl340"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/main_scene="uid://dyanwfdvk5krd"
 
 [rendering]
 

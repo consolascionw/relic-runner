@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b40gmi66a84fw"]
+
+[ext_resource type="Texture2D" uid="uid://cfm165dvgv5di" path="res://assets/sprites/player/School.png" id="1_krsct"]
+[ext_resource type="PackedScene" uid="uid://cj7xoed6rhrl3" path="res://scenes/player/player_action.tscn" id="2_dhmm7"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_krsct")
+
+[node name="PlayerAction" parent="." instance=ExtResource("2_dhmm7")]
+position = Vector2(61, 22)
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(61, 22)
+
+[node name="Camera2D" type="Camera2D" parent="Node2D"]
+visible = false
+zoom = Vector2(10, 10)

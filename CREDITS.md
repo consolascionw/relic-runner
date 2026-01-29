@@ -4,7 +4,7 @@ This is about ethics and professionalism.
 Required Sections
 Team Members
 List:
-Which Consolascion – Project Lead, Gameplay Programmer
+Which Consolascion – Project Lead, Game Designer
 Major Contributions:
 
 -	Core game concept and implementation
@@ -14,7 +14,7 @@ Major Contributions:
 -	Created and writing of README.md
 -	Documented game overview, controls, features, and how to run the game
 
-Austine Lizada – Game Designer, Gameplay Programmer
+Austine Lizada – Gameplay Programmer
 Major Contributions:
 
 -	Created and writing of DESIGN_DOC.md

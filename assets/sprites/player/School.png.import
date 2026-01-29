@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h6678aetfh13"
-path="res://.godot/imported/Updated logo.png-c697f43332610b5655cfca9a49453304.ctex"
+uid="uid://cfm165dvgv5di"
+path="res://.godot/imported/School.png-9d9b9e57a993469c777af3c69c3a3679.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/Updated logo.png"
-dest_files=["res://.godot/imported/Updated logo.png-c697f43332610b5655cfca9a49453304.ctex"]
+source_file="res://assets/sprites/player/School.png"
+dest_files=["res://.godot/imported/School.png-9d9b9e57a993469c777af3c69c3a3679.ctex"]
 
 [params]
 
