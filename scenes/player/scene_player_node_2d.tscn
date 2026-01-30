@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4gouh2wyl340"]
+[gd_scene load_steps=4 format=3 uid="uid://c4gouh2wyl340"]
 
 [ext_resource type="Texture2D" uid="uid://cfm165dvgv5di" path="res://assets/sprites/player/School.png" id="1_e12wl"]
+[ext_resource type="Script" uid="uid://b5hseh1lr2uui" path="res://scripts/GameStateManager.gd" id="1_fu4tf"]
 [ext_resource type="PackedScene" uid="uid://cj7xoed6rhrl3" path="res://scenes/player/player_action.tscn" id="2_fu4tf"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_fu4tf")
 
 [node name="School" type="Sprite2D" parent="."]
 texture = ExtResource("1_e12wl")
