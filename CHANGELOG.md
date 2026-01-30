@@ -37,3 +37,20 @@
 - Created CREDITS.md
 - Created DESIGN_DOC.md
 - Created README.md
+
+# Week 2 Prelim
+Updated Assets
+  - Added Player Sprites
+     - Dash-Attack.png
+     - Dash-Attack.png.import
+     - Running-Sprite.png
+     - Running-Sprite.png.import
+     - Upward-jumping-Sprite.png
+     - Upward-jumping-Sprite.png.import
+- Added and Updated Scripts
+    - GameStateManager.gd
+    - GameStateManager.gd.uid
+    - Player.gd
+    - Player.gd.uid
+- Updated CREDITS.md
+
