@@ -1,15 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://dab8420087hqo"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_s3g70"]
-size = Vector2(32, 32)
+size = Vector2(10, 10)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ttipd"]
-radius = 16.124516
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s3g70"]
+size = Vector2(2.5, 2.5)
 
 [node name="Relic" type="Area2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5.5879354e-08, 0)
+scale = Vector2(0.25, 0.25000003)
 texture = SubResource("PlaceholderTexture2D_s3g70")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_ttipd")
+shape = SubResource("RectangleShape2D_s3g70")
