@@ -54,3 +54,47 @@ Updated Assets
     - Player.gd.uid
 - Updated CREDITS.md
 
+# Week 4 Prelim
+
+Changed Game Title: "Dark Continent"
+
+Description:
+Dark Continent is a 2D action platformer where players explore dark environments, defeat enemies, and unlock new areas.
+
+New Controls and New Features:
+- Q - Dash
+- W / Up Arrow - Jump
+- A / Left Arrow - Move Left
+- D / Right Arrow - Move Right
+- Esc / P - Pause
+
+Deleted old placeholder assets and updated project organization
+
+Updated assests and sprites
+- Enemies
+  - demon-bat - aerial movement and swoop attacks
+  - demon-gunner - projectile attacks
+  - demon-hound - speed
+  - demon-swordsman - ground pressure, melee and dash attacks
+- Environment
+  - chest
+  - door
+  - portal
+  - tilesheet/Stage Elements
+- Player/dark-knight
+  - png/1x
+  - sprite/1x
+- UI/hp_energy_bar
+  - energy-bar
+  - energy-icon
+  - hp-bar
+  - hp-icon
+  - one-bar-container
+  - two-bar-container
+Updated resources/items
+  - demon-heart
+  - key
+  - large-potion
+  - rune-tablet
+  - small-potion
+Updated scenes

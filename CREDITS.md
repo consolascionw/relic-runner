@@ -1,47 +1,59 @@
 CREDITS.md - Attribution and Responsibility
-Purpose
-This is about ethics and professionalism.
+
+Purpose - This is about ethics and professionalism.
+
 Required Sections
-Team Members
-List:
+
+Team Members:
+
 Which Consolascion – Project Lead, Game Designer
 Major Contributions:
-
--	Core game concept and implementation
--	Player mechanics (running, jumping, rolling, dash-attack)
--	Enemy and hazard systems
--	Health, checkpoint, and distance-based progression systems
--	Created and writing of README.md
--	Documented game overview, controls, features, and how to run the game
+- Core game concept and overall implementation
+- Player mechanics (walking, running, jumping, dash, attack)
+- Enemy and hazard systems
+- Health, checkpoint, and distance-based progression systems
+- Game balancing and difficulty pacing
+- Created and wrote README.md
 
 Austine Lizada – Gameplay Programmer
 Major Contributions:
+- Created and wrote DESIGN_DOC.md
+- Design justification and core gameplay loop explanation
+- Mechanics overview and feature planning
+- Accessibility, UI/UX, and visual style planning
 
--	Created and writing of DESIGN_DOC.md
--	Design justification, core gameplay loop, mechanics overview
--	Accessibility, UI/UX, and visual style planning
-
-Kevin Armamento – Development Log Manager, Gameplay Programmer
+Gerson Ramos – Development Log Manager, Gameplay Programmer
 Major Contributions:
+- Created and maintained CHANGELOG.md
+- Weekly tracking of project progress and development milestones
+- Assisted in gameplay feature testing and iteration
+- Supported basic UI and gameplay integration tasks
 
--	Created and maintenance of CHANGELOG.md
--	Weekly tracking of project progress and development milestones
--	Audio integration
-
-Gerson Ramos – Documentation Lead, Gameplay Programmer
+Kevin Armamento – Documentation Lead, Gameplay Programmer
 Major Contributions:
-
--	UI implementation (health icons, distance meter, menus)
--	Created of CREDITS.md
--	Audio integration
+- Created and wrote CREDITS.md
+- Organized documentation files in the project root
+- Ensured proper attribution and ethical compliance
+- Assisted with audio integration and gameplay testing
 
 Asset Credits
-The project currently uses self-created and placeholder assets for development and prototyping.
--	Audio (Sound Sprites & UI Assets – Self-created / placeholder assets
--	Effects & Music) – Placeholder or free-to-use assets for development
+
+The project currently uses self-created, placeholder, and legally acquired external assets for development and prototyping.
+
+- Audio (Sound Sprites & UI Assets) – Self-created / placeholder assets
+- Effects & Music – Placeholder or free-to-use assets for development
+
+- Valley 2D Action Platformer Asset Pack
+  Creator: Pixramen
+  Source: https://pixramen.com
+  License: Commercial license (purchased asset)
+
 Note:
-Any external assets that will going to use later stages of development will be fully credited here, including asset name, creator, source URL, and license, in compliance with ethical and academic standards.
+
+Any external assets that will be used in later stages of development will be fully credited here, including the asset's name, creator, source URL, and license, in compliance with ethical and academic standards.
+
 Tools Used
--	Godot Engine 4.2 – Game engine
--	Visual Studio Code – Code editor
--	Godot Built-in Tools – UI, audio, and scene management
+
+- Godot Engine 4.2 – Game engine
+- Visual Studio Code – Code editor
+- Godot Built-in Tools – UI, audio, and scene management

@@ -7,6 +7,11 @@ extends CharacterBody2D
 # ----------------------------
 # 1. Replace your health and score variables with the following variables and export it all. 
 # Initial values are up to you:
+@onready var _animated_sprite = $AnimatedSprite2D
+# Replace AnimatedSprite2D with AnimationPlayer
+# if you are using animationplayer
+@export var jump_velocity: float = -400.0
+@export var speed: float = 200.00
 @export var max_health: int = 100
 @export var player_name: String = "Dora"
 @export var starting_level: int = 1
@@ -27,6 +32,53 @@ var stats: Dictionary = {}
 # Then you need to create a separate array for inventory items and relics.
 # optional - only if multiple rewards or items
 var inventory: Array[String] = []
+		
+func _process(_delta):
+	if Input.is_action_pressed("Right"):
+		_animated_sprite.flip_h = false
+		_animated_sprite.play("dark-knight-run")
+
+	elif Input.is_action_pressed("Left"):
+		_animated_sprite.flip_h = true
+		_animated_sprite.play("dark-knight-run")
+
+	elif Input.is_action_pressed("Jump"):
+		_animated_sprite.play("dark-knight-jump")
+
+	else:
+		_animated_sprite.play("dark-knight-idle")
+
+#var relics_collected: Array[String] = []
+func _physics_process(delta):
+
+	# Gravity (para bumagsak)
+	if not is_on_floor():
+		velocity.y += 1200 * delta
+
+
+	# Left / Right movement
+	var direction = Input.get_axis("move_left", "move_right")
+
+	if direction != 0:
+		velocity.x = direction * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+
+
+	# Jump (ONE PRESS only)
+	if Input.is_action_just_pressed("Jump") and is_on_floor():
+		velocity.y = jump_velocity
+
+
+	move_and_slide()
+
+func _enforce_four_direction(v: Vector2) -> Vector2:
+	if v.x != 0.0 and v.y != 0.0:
+		if abs(v.x) >= abs(v.y):
+			return Vector2(sign(v.x), 0)
+		else:
+			return Vector2(0, sign(v.y))
+	return v
 
 # optional - only if relics are different from inventory items
 # var relics_collected: Array[String] = []

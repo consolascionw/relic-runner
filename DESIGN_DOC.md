@@ -1,114 +1,169 @@
 Why the Game Is the Way It Is
 Purpose
-This is for design justification. It proves that choices were intentional, not accidental. You may use the provided project brief and design documents as guide.
 
-# Required Sections
+This document justifies the design decisions of Dark Continent. Every mechanic, enemy, and level structure is intentional and supports movement mastery, readability, and fair challenge rather than complexity.
 
 # High Concept
-Gerson Run is a 2D side-scrolling, level-based running game where the player controls Gerson that must reach a specific distance goal in each level while avoiding hazards, defeating enemies, and collecting power-ups.
+
+Dark Continent is a 2D side-scrolling, level-based running game where the player controls the Dark Knight. The player must defeat small enemies and bosses while maintaining forward momentum to complete each level.
 
 # Core Design Pillars
 1. Movement-First Gameplay
-Movement is the core of Gerson Run. Running, jumping, and dashing are the primary actions.
-Enemies, hazards, and collectibles exist to test how well the player moves and reacts, not how complex their inputs are.
+
+Movement is the core of Dark Continent. Running, jumping, and dash attacks are the primary actions available to the player.
+Enemies exist to challenge movement timing, positioning, and commitment rather than complex input combinations. Every encounter is designed to be solved through proper movement and offensive dash usage.
 
 2. Readable Danger and Fair Failure
-All hazards and enemies are clearly visible and behave consistently.
-When the player fails, the cause is obvious (missed jump, mistimed dash, poor positioning), reinforcing learning instead of frustration.
 
-3. defeating enemies is optional. Players who choose to engage enemies are rewarded with collectibles such as health (heart icons) and dash-attack or power‑up collectibles.
-This creates meaningful decisions between playing safely or taking risks for stronger rewards.
+All enemies are designed to be visually distinct and behaviorally predictable, allowing players to quickly read threats while moving at speed.
 
-4. Each level has a clear distance goal (example: 5,000 meters).
-This gives structure and progression, preventing the game from feeling endless and providing a clear sense of completion.
+1. Demon Swordsman pressures ground positioning and dash timing.
+
+2. Demon Gunner forces the player to jump or dash through projectiles.
+
+3. Demon Bat challenges vertical awareness and aerial movement.
+
+4. Demon Hound tests reaction speed and forward momentum.
+
+Enemy attacks and patterns are clearly telegraphed, encouraging the player to respond using jumps and offensive dash attacks.
+Failure results from clear movement errors—such as mistimed dash attacks, missed jumps, or poor positioning—ensuring that deaths feel fair and instructional rather than frustrating.
+
+3. Goal-Oriented Level Flow
+
+Each level has a clear endpoint that the player must reach by continuously moving forward and engaging enemies.
+Enemy placement—such as ranged attackers on lower platforms or flying enemies above—forces the player to adapt movement without stopping or backtracking.
+
+This structure reinforces momentum, supports mastery of running, jumping, and dash attacks, and builds toward a boss encounter that marks clear level completion.
 
 # Target Platform and Audience
+
 1. Platform: PC (Windows)
+
 2. Engine: Godot 4.x
-3. Audience: Casual to mid‑core players
-4. Skill Level: Beginner‑friendly, mastery‑rewarding
 
-# Core Gameplay Loop
-Run → Avoid Hazards → Defeat Enemies → Collect Power‑Ups → Reach Distance Goal → Complete Level
+3. Audience: Casual to mid-core players
 
-Players continuously move forward, react to threats, manage resources, and aim to survive until the required distance is reached.
+4. Skill Level: Beginner-friendly, mastery-rewarding
+
+5. Core Gameplay Loop
+
+Move → Engage Enemies → Defeat Boss → Complete Level
+
+Players continuously move forward, react to enemy patterns, defeat small enemies and bosses, and reach the level endpoint.
 
 # Mechanics Overview
-Player
-1. Automatic forward running
+# Player
+
+1. forward and backward running
+
 2. Jump
-3. Roll
-4. Dash with limited used
-5. Collectibles(exp: Heart-icon,Power-Ups)
 
-# Enemies
-1. Basic ground enemies
-2. Enemies that drop collectibles when defeated
+3. Dash
 
-Enemy behavior is predictable and simple, increasing difficulty through placement rather than stats.
+4. Attack
 
-# Hazards
-1. Spikes
-2. Gaps
-3. Environmental obstacles
+5. Collectibles (bosses drop a key to open a chest)
 
-Hazards are consistent and visually readable to support fair failure.
+6. Enemies
 
-# Relics & Collectibles
-1. Health (Heart icon)
-2. Dash power‑ups
-3. Visual and audio feedback on pickup
+7. Ground enemies that challenge timing and positioning
 
-Collectibles reward skillful movement and enemy engagement.
+8. Ranged enemies that control space with projectiles
 
-# Level Design
+9. Flying enemies that test vertical movement
+
+10. Bosses that combine these patterns and drop a key when defeated
+
+Enemy behavior is simple and predictable. Difficulty increases through placement, combinations, and timing rather than enemy stats.
+
+Collectibles Inside the Chest
+
+Health (heart icon)
+
+Dash power-ups
+
+Clear visual and audio feedback on pickup
+
+Collectibles reward skillful movement, successful combat, and forward progression.
+
+Level Design
 Teaching Mechanics
+
 Levels introduce mechanics gradually:
 
-1. Safe introduction of a hazard or enemy
-2. Simple application of the mechanic
-3. Combination with another challenge
-4. Clear success test through distance completion
+Safe introduction of an enemy type
 
-# UI and Feedback
-Planned UI elements:
-1. Health icon
-2. Distance progress meter
-3. Dash bar
-4. Pause menu
-5. Game over screen
-6. Level complete screen
+Simple application through movement
 
-# Audio and Game Feel
-1. Jump sound
-2. Dash sound
-3. Roll sound
-4. Spawn or Respawn sound
-5. Checkpoint sound
-6. Collectible sound
-7. Enemy defeat sound
-8. Level complete sound
-9. Game over sound
+Combination of multiple enemy types
 
-# Save and Progression
-1. Level completion tracking
-2. Best distance
-3. Audio and accessibility settings
+Clear success condition through reaching the level endpoint
 
-# Accessibility Requirements
+UI and Feedback
+
+Planned UI elements include:
+
+Health indicator
+
+Level progress indicator
+
+Dash usage bar
+
+Pause menu
+
+Game over screen
+
+Level complete screen
+
+All UI elements prioritize clarity and readability during fast movement.
+
+Audio and Game Feel
+
+Sound effects reinforce player actions and feedback:
+
+Jump
+
+Dash attack
+
+Spawn / respawn
+
+Checkpoint
+
+Collectible pickup
+
+Enemy defeat
+
+Level completion
+
+Game over
+
+Save and Progression
+
+Level completion tracking
+
+Best performance tracking
+
+Audio and accessibility settings
+
+Accessibility Requirements
+
 At least two accessibility features will be implemented:
-1. Adjustable audio levels
-2. Simple keyboard controls
 
-Accessibility is treated as part of overall design quality.
+Adjustable audio levels
 
-# Art and Visual Style
-1. Simple 2D cartoon style
-2. High contrast between player, enemies, and hazards
+Simple and consistent keyboard controls
 
-# Cut or Changed Features
-(To be completed later in development if needed)
+Accessibility is treated as part of overall design quality, not an optional feature.
+
+Art and Visual Style
+
+Simple 2D pixel-art style
+
+High contrast between player, enemies, and environment
+
+Clear silhouettes to support readability during fast movement
 
 # Final Design Note
-Gerson Run: Distance Trial focuses on clarity, fairness, and polish rather than feature quantity.
-Every system exists to support movement, readability, and player learning. Features that do not serve these goals are intentionally excluded.
+
+Dark Continent focuses on clarity, fairness, and polished movement-driven gameplay rather than feature quantity.
+Every system—from enemy behavior to level flow—exists to support movement mastery, readable danger, and player learning. Features that do not serve these goals are intentionally excluded.
