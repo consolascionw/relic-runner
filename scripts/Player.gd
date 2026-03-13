@@ -57,7 +57,7 @@ func _physics_process(delta):
 
 
 	# Left / Right movement
-	var direction = Input.get_axis("move_left", "move_right")
+	var direction = Input.get_axis("Left", "Right")
 
 	if direction != 0:
 		velocity.x = direction * speed

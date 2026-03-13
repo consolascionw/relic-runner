@@ -1,8 +1,9 @@
-[gd_scene load_steps=22 format=3 uid="uid://b47gq6l2mynaw"]
+[gd_scene load_steps=25 format=3 uid="uid://b47gq6l2mynaw"]
 
 [ext_resource type="Script" uid="uid://tkk841mkaamd" path="res://scripts/Player.gd" id="1_gfjak"]
 [ext_resource type="Texture2D" uid="uid://cbew1nxv0v7k" path="res://assets/sprites/player/dark-knight/sprite/1x/dark-knight-idle.png" id="2_4kuee"]
 [ext_resource type="Texture2D" uid="uid://boqrvh072nxtn" path="res://assets/sprites/player/dark-knight/sprite/1x/dark-knight-run.png" id="3_524rm"]
+[ext_resource type="Texture2D" uid="uid://c54qe0r21hsqw" path="res://assets/sprites/player/dark-knight/sprite/1x/dark-knight-prepare-jump.png" id="3_c3xxp"]
 [ext_resource type="Texture2D" uid="uid://dgp2jag0iilxr" path="res://assets/sprites/player/dark-knight/sprite/1x/dark-knight-jump.png" id="3_tpg5x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tpg5x"]
@@ -17,22 +18,30 @@ atlas = ExtResource("2_4kuee")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8qjgm"]
-atlas = ExtResource("3_tpg5x")
+atlas = ExtResource("3_c3xxp")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ejd4k"]
-atlas = ExtResource("3_tpg5x")
+atlas = ExtResource("3_c3xxp")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2xrq6"]
 atlas = ExtResource("3_tpg5x")
-region = Rect2(128, 0, 64, 64)
+region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pi3ps"]
 atlas = ExtResource("3_tpg5x")
-region = Rect2(192, 0, 64, 64)
+region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kswpp"]
+atlas = ExtResource("3_tpg5x")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5i4m"]
+atlas = ExtResource("3_tpg5x")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1lr0"]
 atlas = ExtResource("3_tpg5x")
 region = Rect2(256, 0, 64, 64)
 
@@ -96,6 +105,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kswpp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5i4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1lr0")
 }],
 "loop": true,
 "name": &"dark-knight-jump",
@@ -139,7 +154,9 @@ shape = SubResource("RectangleShape2D_tpg5x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8qjgm")
-animation = &"dark-knight-idle"
+animation = &"dark-knight-jump"
+frame = 3
+frame_progress = 0.054982603
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(10, 10)
